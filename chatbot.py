@@ -1,14 +1,11 @@
-print('Olá, qual o seu nome?')
-nome = input('>: ')
-conhecidos = ['Raimundo', 'Will', 'Joao']
-for conhecido in conhecidos:
-    if nome == 'Adriano':
-        print('Olá ' + nome)
-    else:
-        print('Muito prazer ' + nome)
+from funcoes import *
+print('Olá, qual o seu nome?')    
+nome = pegaNome(resposta())
+resp = respondeNome(nome)
+print(resp)
 while True:
-    resposta = input('>: ')
-    if resposta == 'tchau':
+    rpst = input('>: ')
+    if rpst == 'tchau':
         break
     else:
         print('Digite outra coisa ')
